@@ -5,21 +5,17 @@
 
 	<body>
 		<div id="myDIV" class="header">
-		  <h2>My To Do List</h2>
+		  <h2>Work In Progress</h2>
+		  <h3>tu non hai visto niente</h3>
 		  <input type="text" id="myInput" placeholder="Title...">
-		  <span onclick="newElement()" class="addBtn">Add</span>
+		  <span onclick="newElement()" class="addBtn">+</span>
 		</div>
 
-		<ul id="myUL">
-		  <li>Hit the gym</li>
-		  <li class="checked">Pay bills</li>
-		  <li>Meet George</li>
-		  <li>Buy eggs</li>
-		  <li>Read a book</li>
-		  <li>Organize office</li>
+		<ul id="argumentList">
+		<li>test</li>
 		</ul>
 		<script>
-					// Create a "close" button and append it to each list item
+			// Create a "close" button and append it to each list item
 			var myNodelist = document.getElementsByTagName("LI");
 			var i;
 			for (i = 0; i < myNodelist.length; i++) {
@@ -57,7 +53,7 @@
 			  if (inputValue === '') {
 				alert("You must write something!");
 			  } else {
-				document.getElementById("myUL").appendChild(li);
+				document.getElementById("argumentList").appendChild(li);
 			  }
 			  document.getElementById("myInput").value = "";
 
